@@ -12,5 +12,5 @@ $_MODULE['<{changecarrier}prestashop>changecarrier_c9cc8cce247e49bae79f15173ce97
 $_MODULE['<{changecarrier}prestashop>adminorder_cf6ea770873543cbdb7b1d2f6c2aeacc'] = 'Changer le transporteur';
 $_MODULE['<{changecarrier}prestashop>adminorder_3e2b2983a6709ec2d87539a720027e97'] = 'Changer !';
 $_MODULE['<{changecarrier}prestashop>config_c3130ed0e77e4c31cc38d077daa02d33'] = 'Ce module permet au vendeur de changer le transporteur d\'une commande';
-$_MODULE['<{changecarrier}prestashop>config_c2dbc038021c970e1f7210a6ff775222'] = 'Ce module est libre d\'utilisation';
+$_MODULE['<{changecarrier}prestashop>config_c772574278e22041c5bd002669fdc8d7'] = 'Ce module est libre d\'utilisation et open-source :';
 $_MODULE['<{changecarrier}prestashop>config_5f70075214ce4978d25d08275afb959c'] = 'Pour contacter l\'auteur de ce module :';

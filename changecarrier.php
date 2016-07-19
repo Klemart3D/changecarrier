@@ -7,12 +7,12 @@ class ChangeCarrier extends Module
     // MÉTHODES NATIVES MODULE PRESTASHOP
 
     public function __construct() // CONSTRUCTEUR
-	{
-		$this->name = 'changecarrier';                                                          // Identifiant unique du module
+    {
+        $this->name = 'changecarrier';                                                          // Identifiant unique du module
         $this->tab = 'shipping_logistics';                                                      // Catégorie associée au module
         $this->version = '1.0';                                                                 // Version du module
         $this->author = 'Klemart3D';                                                            // Auteur
-		$this->author_uri = 'contact@klemart3d.fr';                                             // Mail de contact
+        $this->author_uri = 'contact@klemart3d.fr';                                             // Mail de contact
 
         $this->bootstrap = true;
         parent::__construct();
@@ -22,14 +22,14 @@ class ChangeCarrier extends Module
         $this->ps_versions_compliancy = array('min' => '1.6', 'max' => _PS_VERSION_);           // Compatibilité du module
         $this->confirmUninstall = $this->l('Are you sure you want to uninstall?');              // Message de désinstallation
         $this->module_key = "0cb00868c2c0f986d3fd3edbda28959a";                                 // Clé d'identification unique du module
-	}
+    }
         
     public function install() // INSTALLATEUR
-	{
+    {
         if(!parent::install() || !$this->registerHook('adminOrder') || !Configuration::updateValue('CHANGECARRIER_ACTIVE', '1'))
             return false;
-		return true;
-	}
+        return true;
+    }
 
     public function uninstall() // DÉSINSTALLATEUR
     {
@@ -145,7 +145,7 @@ class ChangeCarrier extends Module
             'id_order' => $order->id
         ));
 
-	   return $this->displayHookAdminOrder();
+       return $this->displayHookAdminOrder();
     }
     
     private function getCarrierSelector($currentcarrier) // Récupération de la liste des transporteurs

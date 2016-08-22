@@ -152,7 +152,7 @@ class ChangeCarrier extends Module
     {
         global $cookie;
         $carrier_active = Configuration::get('CHANGECARRIER_ACTIVE') == 1 ? TRUE : FALSE;           // Transporteurs actifs ou inactifs
-        $carriers = Carrier::getCarriers(intval($cookie->id_lang), (bool)$carrier_active, false);
+        $carriers = Carrier::getCarriers((int)$cookie->id_lang, (bool)$carrier_active, false, false, null, 'ALL_CARRIERS');		
         $options = "";
         foreach ($carriers as $carrier)
         {

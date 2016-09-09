@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <module>
 	<name>changecarrier</name>
-	<displayName><![CDATA[Change carrier]]></displayName>
+	<displayName><![CDATA[Changer de transporteur]]></displayName>
 	<version><![CDATA[1.0]]></version>
-	<description><![CDATA[Changes easily and quickly the carrier of an order]]></description>
+	<description><![CDATA[Changez facilement et rapidement le transporteur d&#039;une commande !]]></description>
 	<author><![CDATA[Klemart3D]]></author><author_uri><![CDATA[contact@klemart3d.fr]]></author_uri>
 	<tab><![CDATA[shipping_logistics]]></tab>
-	<confirmUninstall><![CDATA[Are you sure you want to uninstall?]]></confirmUninstall>
+	<confirmUninstall><![CDATA[Voulez-vous vraiment désinstaller le module ?]]></confirmUninstall>
 	<is_configurable>1</is_configurable>
-	<need_instance></need_instance>
+	<need_instance>1</need_instance>
 	<limited_countries></limited_countries>
 </module>

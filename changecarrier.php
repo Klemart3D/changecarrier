@@ -139,7 +139,7 @@ class ChangeCarrier extends Module
         }
 
         $this->smarty->assign(array(                                            // Variables envoyées au template
-            'shop_uri' => _PS_BASE_URL_.$_SERVER['REQUEST_URI'],
+            'shop_uri' => $_SERVER['REQUEST_URI'],
             'module_name' => $this->name,
             'carrier_list' => $this->getCarrierSelector($order->id_carrier),
             'id_order' => $order->id

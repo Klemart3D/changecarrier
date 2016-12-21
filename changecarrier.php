@@ -10,7 +10,7 @@ class ChangeCarrier extends Module
     {
         $this->name = 'changecarrier';                                                          // Identifiant unique du module
         $this->tab = 'shipping_logistics';                                                      // Catégorie associée au module
-        $this->version = '1.0';                                                                 // Version du module
+        $this->version = '1.0.1';                                                               // Version du module
         $this->author = 'Klemart3D';                                                            // Auteur
         $this->author_uri = 'contact@klemart3d.fr';                                             // Mail de contact
 

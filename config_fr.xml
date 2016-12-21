@@ -2,7 +2,7 @@
 <module>
 	<name>changecarrier</name>
 	<displayName><![CDATA[Changer de transporteur]]></displayName>
-	<version><![CDATA[1.0]]></version>
+	<version><![CDATA[1.0.1]]></version>
 	<description><![CDATA[Changez facilement et rapidement le transporteur d&#039;une commande !]]></description>
 	<author><![CDATA[Klemart3D]]></author><author_uri><![CDATA[contact@klemart3d.fr]]></author_uri>
 	<tab><![CDATA[shipping_logistics]]></tab>

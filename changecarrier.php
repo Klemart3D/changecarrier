@@ -10,7 +10,7 @@ class ChangeCarrier extends Module
     {
         $this->name = 'changecarrier';                                                          // Identifiant unique du module
         $this->tab = 'shipping_logistics';                                                      // Catégorie associée au module
-        $this->version = '1.0.1';                                                               // Version du module
+        $this->version = '1.0.2';                                                               // Version du module
         $this->author = 'Klemart3D';                                                            // Auteur
         $this->author_uri = 'contact@klemart3d.fr';                                             // Mail de contact
 
@@ -134,12 +134,12 @@ class ChangeCarrier extends Module
                 $order->id_carrier = (int)$new_carrier_id;
                 $order->update();
 
-                Tools::redirect(_PS_BASE_URL_.$_SERVER['REQUEST_URI']);         // On rafraîchit la page
+                Tools::redirect(Tools::getHttpHost(true).$_SERVER['REQUEST_URI']);         // On rafraîchit la page
             }
         }
 
         $this->smarty->assign(array(                                            // Variables envoyées au template
-            'shop_uri' => $_SERVER['REQUEST_URI'],
+            'shop_uri' => Tools::getHttpHost(true).$_SERVER['REQUEST_URI'],
             'module_name' => $this->name,
             'carrier_list' => $this->getCarrierSelector($order->id_carrier),
             'id_order' => $order->id
